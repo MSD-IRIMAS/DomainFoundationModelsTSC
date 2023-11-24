@@ -1,0 +1,159 @@
+hydra :
+  job :
+    name : test
+  run :
+    dir : exps/${hydra.job.name}
+
+# test
+
+list_of_datasets : ['Coffee', 'GunPoint']
+
+# Devices
+
+# list_of_datasets : ['ACSF1',
+#                     'Computers',
+#                     'ElectricDevices',
+#                     'HouseTwenty',
+#                     'LargeKitchenAppliances',
+#                     'PLAID',
+#                     'RefrigerationDevices',
+#                     'ScreenType',
+#                     'SmallKitchenAppliances',]
+
+# Image
+
+# list_of_datasets : ['Adiac',
+#                     'ArrowHead',
+#                     'BeetleFly',
+#                     'BirdChicken',
+#                     'DiatomSizeReduction',
+#                     'DistalPhalanxTW',
+#                     'FaceFour',
+#                     'FacesUCR',
+#                     'Fish',
+#                     'HandOutlines',
+#                     'Herring',
+#                     'MedicalImages',
+#                     'MiddlePhalanxTW',
+#                     'OSULeaf',
+#                     'PhalangesOutlinesCorrect',
+#                     'ProximalPhalanxTW',
+#                     'ShapesAll',
+#                     'SwedishLeaf',
+#                     'Symbols',
+#                     'WordSynonyms',
+#                     'Yoga',
+#                     'Crop',
+#                     'MixedShapesSmallTrain',
+#                     ]
+
+# Traffic
+
+# list_of_datasets : ['Chinatown',
+#                     'MelbournePedestrian']
+
+# Spectrum (not really, i say ignore ... One is not even time series
+# and the others have) and the others are the same with different class
+# distribution:
+
+# list_of_datasets : ['Rock',
+#                     'SemgHandGenderCh2',
+#                     'SemgHandMovementCh2',
+#                     'SemgHandSubjectCh2']
+
+# motion
+
+# list_of_datasets : ['CricketX',
+#                     'CricketY',
+#                     'CricketZ',
+#                     'Haptics',
+#                     'InlineSkate',
+#                     'ToeSegmentation1',
+#                     'ToeSegmentation2',
+#                     'UWaveGestureLibraryAll',
+#                     'UWaveGestureLibraryX',
+#                     'UWaveGestureLibraryY',
+#                     'UWaveGestureLibraryZ',
+#                     'Worms',
+#                     'GunPointAgeSpan']
+
+# sensor
+
+# list_of_datasets : ['Car',
+#                     'ChlorineConcentration',
+#                     'Earthquakes',
+#                     'FordA',
+#                     'FordB',
+#                     'InsectWingbeatSound',
+#                     'ItalyPowerDemand',
+#                     'Lightning2',
+#                     'Lightning7',
+#                     'MoteStrain',
+#                     'Phoneme',
+#                     'Plane',
+#                     'SonyAIBORobotSurface1',
+#                     'SonyAIBORobotSurface2',
+#                     'StarLightCurves',
+#                     'Trace',
+#                     'Wafer',
+#                     'FreezerSmallTrain']
+
+# ecg
+
+# list_of_datasets : ['CinCECGTorso',
+#                     'ECG200',
+#                     'ECG5000',
+#                     'ECGFiveDays',
+#                     'NonInvasiveFetalECGThorax1',
+#                     'NonInvasiveFetalECGThorax2',
+#                     'TwoLeadECG']
+
+# simulated
+
+# list_of_datasets : ['CBF',
+#                     'Mallat',
+#                     'ShapeletSim',
+#                     'SyntheticControl',
+#                     'TwoPatterns',
+#                     'BME',
+#                     'SmoothSubspace',
+#                     'UMD']
+
+# spectro
+
+# list_of_datasets : ['Beef',
+#                     'Coffee',
+#                     'Ham',
+#                     'Meat',
+#                     'OliveOil',
+#                     'Strawberry',
+#                     'Wine',
+#                     'EthanolLevel',]
+
+visualize_datasets : True
+classifier : 'HInception'
+output_dir : 'results'
+runs_pretext : 5
+runs_fine_tune : 5
+
+batch_size_pretext : 64
+batch_size : 64
+n_epochs_pretext : 750
+n_epochs : 750
+
+run_pretext_finetune : True
+run_baseline : True
+train_pretext : True
+train_finetune : True
+train_baseline : True
+
+runs_baseline : 5
+
+batch_size_baseline : 64
+n_epochs_baseline : 1500
+
+# inception params
+###############################
+depth_pretext : 3
+depth : 3
+###############################
