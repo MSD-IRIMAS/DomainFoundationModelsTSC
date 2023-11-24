@@ -1,5 +1,7 @@
 # Finding Foundation Models for Time Series Classification with a PreText Task
 
+Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/), [Maxime Devanne](https://maxime-devanne.com/), [Stefano Berretti](http://www.micc.unifi.it/berretti/), [Jonathan Weber](https://www.jonathan-weber.eu/) and [Germain Forestier](https://germain-forestier.info/)
+
 This repository contains the source code for our Foundation model paper titled "Finding Foundation Models for Time Series Classification with a PreText Task". In this paper, we pre-train a deep learning model on a pretext task on multiple datasets from the same domain. This is followed by fine tuning this model on each dataset independently for their own classification task. Here is a summary figure of the approach:
 
 <p align="center">
