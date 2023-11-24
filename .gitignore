@@ -8,6 +8,7 @@ __pycache__/
 
 *.out
 *.yaml
+!config/config.yaml
 *.log
 *.csv
 *.pdf
