@@ -6,6 +6,14 @@ __pycache__/
 # C extensions
 *.so
 
+*.out
+*.yaml
+*.log
+*.csv
+*.pdf
+*.hdf5
+*.h5
+
 # Distribution / packaging
 .Python
 build/
