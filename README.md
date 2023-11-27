@@ -46,6 +46,9 @@ The code's configuration uses `hydra`, all the information needed to setup the p
 
 ## Results
 
+All results can be found in the [results_ucr.csv](https://github.com/MSD-IRIMAS/DomainFoundationModelsTSC/blob/main/results_ucr.csv) file containing the accuracy results over the used datastes of the baseline [H-InceptionTime](https://github.com/MSD-IRIMAS/CF-4-TSC/blob/main/classifiers/H_Inception.py), [ResNet](https://github.com/hfawaz/dl-4-tsc/blob/master/classifiers/resnet.py), [MultiROCKET](https://github.com/ChangWeiTan/MultiRocket) and PHIT.
+Results with [HC2](https://github.com/aeon-toolkit/aeon/blob/main/aeon/classification/hybrid/_hivecote_v2.py) and [HydraMultiROCKET](https://github.com/angus924/hydra) can be found in [results_ucr_hc2_hydraMR.csv](https://github.com/MSD-IRIMAS/DomainFoundationModelsTSC/blob/main/results_ucr_hc2_hydraMR.csv)
+
 ### Results compared to the baseline
 
 <p align="center">
