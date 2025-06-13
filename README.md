@@ -7,7 +7,7 @@ Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1</sup>, [Maxi
 <sup>3</sup> [DSAI, Monash University, Australia](https://www.monash.edu/it/dsai)
 
 This repository contains the source code for our Foundation model paper titled "Finding Foundation Models for Time Series Classification with a PreText Task". In this paper, we pre-train a deep learning model on a pretext task on multiple datasets from the same domain. This is followed by fine tuning this model on each dataset independently for their own classification task. Here is a summary figure of the approach.
-A preprint of our paper is not available on [arxiv](https://arxiv.org/abs/2311.14534)
+A preprint of our paper is available on [arxiv](https://arxiv.org/abs/2311.14534)
 
 <p align="center">
 <img src="images/summary.png" alt="summary" width="50%"/>
